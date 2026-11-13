@@ -1,0 +1,28 @@
+phần a bảng masking table
+thông tin pii thật	      nhãn che mờ placeholderloại dữ liệu
+phạm minh c	             [cus_name]	           tên khách hàng
+0988.111.222	             [cus_phone]	    ố điện thoại
+minhc@gmail.com	             [cus_email]	     địa chỉ email
+căn hộ 502 chung cư sunrise q7	[cus_address]	   địa chỉ nhà
+20/09	                      [order_date]	ngày mua hàng
+2kg thịt bò wagyu	      [product_name]	tên sản phẩm
+4.500.000 vnđ	             [order_amount]	giá trị đơn hàng
+martx district 7	    [store_location]	chi nhánh cửa hàng
+
+phần b masked input
+Plaintext
+tôi là [cus_name] (sđt: [cus_phone], email: [cus_email], ở [cus_address]). ngày [order_date] tôi mua [product_amount] [product_name] giá [order_amount] tại [store_location] nhưng bị giao chậm 3 tiếng làm hỏng tiệc gia đình. tôi yêu cầu bồi thường 100%
+
+phần c prompt gửi ai
+Plaintext
+bạn là bộ phận chăm sóc khách hàng của siêu thị martx
+hãy soạn một bức thư xin lỗi chân thành và chuyên nghiệp gửi cho khách hàng [cus_name] vì sự cố giao hàng chậm trễ của sản phẩm [product_name] vào ngày [order_date]
+trong thư cần ghi nhận sự bất tiện của khách hàng tại [cus_address] và đưa ra phương án đền bù thỏa đáng theo đúng yêu cầu
+
+phần d văn bản de-mask
+Plaintext
+kính gửi anh phạm minh c,
+lời đầu tiên martx chân thành xin lỗi anh vì sự cố giao hàng chậm trễ đơn hàng [product_name] vào ngày 20/09 tại địa chỉ căn hộ 502 chung cư sunrise q7 vừa qua khiến tiệc gia đình anh bị ảnh hưởng
+chúng tôi hoàn toàn hiểu và ghi nhận sự bức xúc của anh, đồng thời xin phép được thực hiện bồi thường 100% giá trị đơn hàng như anh đã yêu cầu
+chúc anh và gia đình luôn có những trải nghiệm mua sắm tốt nhất cùng martx ạ
+Chuyển đến kết quả mới nhất của Gemini

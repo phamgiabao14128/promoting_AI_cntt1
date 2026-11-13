@@ -1,0 +1,6 @@
+phần 1 phân tích 2 vi phạm nghiêm trọng của trưởng phòng nhân sự
+1 vi phạm nguyên tắc human-in-the-loop: trưởng phòng đã giao phó toàn bộ quyền quyết định nhân sự mang tính sống còn cho ai mà không hề có sự kiểm duyệt thẩm định hoặc đánh giá lại bằng tư duy con người
+2 sai lầm về trách nhiệm pháp lý và đạo đức: trưởng phòng đổ lỗi hoàn toàn cho dữ liệu và thuật toán của ai để trốn tránh trách nhiệm giải trình khi sa thải nhân viên gây ảnh hưởng nghiêm trọng đến đời sống người lao động
+
+phần 2 sơ đồ luồng 3 bước đảm bảo an toàn cho martx
+1 nhập dữ liệu kpi lịch sử chấm công] -> 2 ai phân tích và đề xuất -> 3 human-in-the-loop thẩm định -> 4 người quản lý ký quyết định
