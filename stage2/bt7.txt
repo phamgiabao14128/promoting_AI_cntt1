@@ -1,0 +1,7 @@
+1, thiết kế 6 khối CREATE
+C – Characte: trưởng phòng chăm sóc khách hàng TechShop
+R – Request: viết email xin lỗi khách hàng bị giao hàng chậm 4–6 ngày
+E – Examples: "TechShop chân thành xin lỗi vì đã khiến quý khách phải chờ đợi"
+A – Adjustment: không đổ lỗi, không hứa suông, không dùng lời lẽ thiếu chuyên nghiệp
+T – Type of Output: email gồm tiêu đề, lời chào, 3 đoạn nội dung, cam kết và liên hệ
+E – Extras: voucher giảm giá 15%, hotline VIP, cá nhân hóa tên và mã đơn hàng

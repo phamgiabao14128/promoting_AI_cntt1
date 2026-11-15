@@ -1,0 +1,50 @@
+1. master prompt
+bạn là chuyên viên phân tích dữ liệu mua hàng của techshop
+
+hãy đọc biên bản đàm phán nằm giữa <<< và >>>, trích xuất thông tin và xuất thành json theo schema:
+
+{
+"vendor_name": "String",
+"discount_rate": "Float",
+"payment_term_days": "Integer",
+"supports_rma_direct": "Boolean",
+"core_product_lines": ["String"],
+"risk_assessment": "String"
+}
+
+quy tắc:
+- discount_rate: chuyển phần trăm thành số thực
+- payment_term_days: số nguyên
+- supports_rma_direct: chỉ nhận true hoặc false
+- risk_assessment: chỉ nhận Low, Medium hoặc High
+- dữ liệu thiếu: String dùng "", số dùng 0, Boolean dùng false
+- không tự suy đoán dữ liệu
+- chỉ xuất json hợp lệ, không markdown, không giải thích, không thêm khóa hoặc dấu phẩy thừa
+biên bản:
+<<<
+[dán nội dung biên bản tại đây]
+
+2. biên bản mẫu
+techshop đàm phán với nhà phân phối viễn thông tân phát
+- chiết khấu: 12,5%
+- thời hạn thanh toán: 30 ngày
+- hỗ trợ đổi trả trực tiếp hàng lỗi tại kho techshop
+- sản phẩm: bo mạch chủ asus, msi; card đồ họa gigabyte; ram kingston; ổ cứng ssd
+- bảo hành: 36 tháng
+- thời gian đổi trả đôi khi kéo dài do cần xác minh
+
+3. test output
+{
+  "vendor_name": "Viễn Thông Tân Phát",
+  "discount_rate": 12.5,
+  "payment_term_days": 30,
+  "supports_rma_direct": true,
+  "core_product_lines": [
+    "Bo mạch chủ Asus",
+    "Bo mạch chủ MSI",
+    "Card đồ họa Gigabyte",
+    "RAM Kingston",
+    "Ổ cứng SSD"
+  ],
+  "risk_assessment": "Medium"
+}

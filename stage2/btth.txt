@@ -1,0 +1,4 @@
+1 bảng endpoin
+tmethodendpointmục đíchpost/chat/sendgửi câu hỏiget/chat/historyxem lịch sửdelete/chat/clearlàm mới chatget/movies/listlấy phim hotget/bot/statuskiểm tra botpost/bot/feedbackgửi đánh giá2 system prompt bảo mậtPlaintextbạn là chuyên gia tư vấn phim ảnh chỉ trả lời thông tin điện ảnh, tuyệt đối từ chối các câu hỏi ngoài lề như thời tiết hay bóng đá
+3 luồng human-in-the-loop ngangPlaintext[1 nhập dữ liệu] ──► [2 ai phân tích] ──► [3 human thẩm định] ──► [4 quản lý ký quyết định]
+4 bảng masking pii khách vip martxpii thậtplaceholderloại dữ liệuphạm minh c[cus_name]tên0988.111.222[cus_phone]sđtminhc@gmail.com[cus_email]email5 prompt chaining tổng hợpPlaintextbước 1: trích xuất và che mờ pii -> bước 2: phân tích cảm xúc few-shot -> bước 3: xuất bảng markdown sạch lỗi
