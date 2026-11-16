@@ -1,0 +1,48 @@
+promt duy nhất có khả năng xử lí một đoạn email thô và trả về đồng thời 2 yêu cầu trên:
+  - bạn là một chuyên viên xử lí dữ liệu nhân sự với độ chính xác tuyệt đối
+  - hãy phân tích đoạn email được cung cấp sau đó trích xuất các thông tin sau:
+      1 họ trên ứng viên
+      2 số điện thoại
+      3 email liên hệ
+      4 vị trí ứng tuyển
+      5 kinh nghiện
+      6 kĩ năng chính
+  - dữ liệu được trích xuất sẽ được đưa trực tiếp vào database tuyển dụng của công ty, do đó cần độ chính xác 100% không thêm bớt thông tin
+  - Họ tên: Chuyển về dạng viết hoa chữ cái đầu (Ví dụ: Nguyễn Văn A).
+    Số điện thoại: Chuẩn hóa về định dạng đầu số quốc gia hoặc loại bỏ dấu cách dư thừa.
+    Kỹ năng chính: Gom nhóm thành một danh sách không trùng lặp (ví dụ: \['Python', 'SQL', 'FastAPI'\]).
+    Trả về định dạng JSON thuần túy theo cấu trúc:
+     { "name": "...", "phone": "...", "email": "...", "position": "...", "experience_years": 2, "skills": \[...\] }
+   - chính xác, khách quan, logic, tuân thủ tuyệt đối cấu trúc đầu ra không them bớt thông tin
+    Ví dụ mẫu 2:Input (Email thô):"Hi team tuyển dụng, mình là lê văn minh, gửi CV ứng tuyển vị trí Data Analyst. Liên hệ mình qua minh.lv@yahoo.com nhé. Các công nghệ mình hay dùng gồm Python, SQL, Tableau và Excel.
+"Output mong muốn:
+Trường thông tin     Giá trị
+Họ tênLê            Văn Minh
+Số điện thoại         null
+Email                minh.lv@yahoo.com
+Vị trí ứng tuyển     Data Analyst
+Năm kinh nghiệm      null
+Kỹ năng chính         Python, SQL, Tableau, ExcelJSON{
+  "name": "Lê Văn Minh",
+  "phone": null,
+  "email": "minh.lv@yahoo.com",
+  "position": "Data Analyst",
+  "experience_years": null,
+  "skills": ["Python", "SQL", "Tableau", "Excel"]
+}
+ví dụ 2: "Hi team, mình là trần thị b, apply vị trí Data Analyst. Liên hệ qua b.tran@yahoo.com. Mình biết SQL, Python."
+Output 2:
+Trường thông tin         Giá trị
+Họ tên                   Trần Thị B
+Số điện thoại            null
+Email                    b.tran@yahoo.com
+Vị trí                   Data Analyst
+Kinh nghiệm              null
+Kỹ năng                  SQL, PythonJSON{
+  "name": "Trần Thị B",
+  "phone": null,
+  "email": "b.tran@yahoo.com",
+  "position": "Data Analyst",
+  "experience_years": null,
+  "skills": ["SQL", "Python"]
+}
