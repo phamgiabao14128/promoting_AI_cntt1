@@ -1,0 +1,22 @@
+1. bước 1 đề xuất 2 prompt mẫu
+giải pháp 1 prompt đơn giản ngắn gọn
+bạn là nhân viên bán hàng hãy đọc tin nhắn của khách là customer_message và tư vấn sản phẩm rồi chốt đơn giúp tôi
+
+giải pháp 2 prompt chi tiết nhiều ràng buộc
+vai trò trợ lý ai vận hành tự động cho cửa hàng nhiệm vụ áp dụng tư duy từng bước chain-of-thought và kiểm soát lỗi dữ liệu dữ liệu đầu vào gồm tin nhắn khách hàng customer_message và dữ liệu crm system_context quy tắc trích xuất các trường sản phẩm ngân sách số điện thoại địa chỉ kiểm tra lỗi nếu thiếu sđt hoặc địa chỉ đánh dấu thiếu thông tin liên hệ nếu ngân sách không đủ đánh dấu mâu thuẫn yêu cầu thực hiện suy luận logic chọn sản phẩm phù hợp nhất trong kho tuyệt đối không tự bịa đặt thông tin liên hệ
+
+2. bước 2 lập bảng so sánh trade-off
+
+tiêu chí | giải pháp 1 đơn giản | giải pháp 2 chi tiết
+độ dễ hiểu | cao | trung bình
+tốn token | ít | nhiều hơn
+chặn lỗi biên | trung bình | cực tốt
+
+3. bước 3 lựa chọn và chạy thử
+
+chọn giải pháp 2 chi tiết làm phương án tối ưu vì giúp kiểm soát chặt chẽ lỗi dữ liệu khi khách không để lại sđt tránh việc ai tự bịa thông tin gây lỗi đơn hàng
+
+kết quả chạy thử mẫu với input khách nhắn tìm máy lọc không khí dưới 3 triệu cho phòng 25m2 có em bé nhưng chưa có sđt
+phân tích dữ liệu trạng thái thiếu thông tin liên hệ
+suy luận chọn sản phẩm levoit core 300s giá 2590000đ phù hợp phòng 25m2 siêu êm cho bé
+phản hồi gửi khách gợi ý sản phẩm và xin thêm số điện thoại liên lạc để chốt đơn

@@ -1,0 +1,19 @@
+CoT: kĩ thuật suy nghĩ từng bước
+   bước 1: Phân tích đề bài
+   bước 2: Lập kế hoạch
+   bước 3: suy luận từng bước
+   bước 4: kiểm tra kết quả
+   bước 5: đưa ra kết quả
+Promot Chaining: kĩ thuật chia nhỏ ( sử dụng bài toán phức tạp, cần chiều sâu, phân tích dữ liệu, kết quả đúng cao )
+   bước 1: phân rã bài toán
+   bước 2: xử lí
+   bước 3: tổng hợp
+   bước 4: kết quả
+   - chia thành nhiều bước nhỏ để tổng hợp thành kết quả lớn
+Xử lí đứt gãy kết quả, duy trì tính nhất quán trong hội thoại dài
+   - Nhận diện sự cố, kĩ thuật continue prompt ( mớm câu tiếp nối, giữ nguyên cấu trúc định dạng, ) chiến lược duy trì bộ nhớ dài hạn ( tóm tắt định kì sau khi hỏi nhiều, neo bối cảnh cung cấp cai trò bối cảnh, làm mới cuộc hội thoại tóm tắt cuộc hội thoại trước copy paste vào phiên mới r tiếp tục )
+
+Làm bài tập: 
+1, phân tích yc đề
+2, lựa chọn pp dã học để xây prompt hiểu quả ( giải thích tại sao lại chọn)
+3, tạo ra các promt giải quyết bài toán

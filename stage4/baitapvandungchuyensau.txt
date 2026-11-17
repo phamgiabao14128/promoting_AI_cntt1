@@ -1,0 +1,72 @@
+1, phân tích yêu cầu đề bài
+- sử dụng kiến thức prompt nâng cao
+- thiết kế giải pháp tự động hóa công việc 
+- xử lí đứt gãy thông tin
+- quy trình xử lí CoT, Prompt Chaining
+
+2, chọn phương pháp
+ 2,1 CoT: vì cần phân tích đề bài, hạn chế bỏ sót dữ liệu 
+ 2,2 Prompt Chaining: vì dễ quản lí từng công đoạn, dễ phát hiện ra lỗi ở từng bước, không cần viết lại một quy trình khi có bước thay đổi
+ 2,3 xử lí đứt gãy: vì có nhiều yêu cầu dễ xảy ra hiện tượng đứt gãy nên cần dùng phương pháp này để AI nhớ lại và thực hiện theo đúng yc đề đưa ra tránh việc AI tự động đoán dữ liệu còn thiểu và không chuyển dữ liệu sang bước sau
+
+3, các prompt để giải quyết bài toán
+ CoT:
+Bạn là chuyên gia xử lí dữ liệu, bạn đang cần xử lí thông tin tự động hóa của một cửa hàng
+bạn cần phân tích các dữ liệu thông tin của từng khách hàng
+giải thích lí do tại sao lại có kết quả như vậy
+ Prompt Chaining:
+Bạn là chuyên viên xử lí dữ liệu
+Bạn cần phân tích thông tin khách hàng
+Bạn cần phân tích thông tin sản phẩm
+Bạn cần phân tích thông tin số lượng
+Bạn cần phân tích thông tin đơn giá
+tạo thành bảng từ những dữ liệu trên
+ Phương pháp xử lí đứt gãy
+Phân tích thông tin của khách hàng theo yêu cầu tôi đã đưa ra ở đầu bài
+
+
+1. input – dữ liệu đầu vào
+dữ liệu đầu vào là thông tin đơn hàng do khách hàng cung cấp, bao gồm
+- mã đơn hàng
+- tên khách hàng
+- số điện thoại
+- địa chỉ giao hàng
+- tên sản phẩm
+- số lượng
+- đơn giá
+2. output – kết quả đầu ra
+kết quả đầu ra cần có
+- thông tin đơn hàng đã chuẩn hóa
+- thông tin khách hàng
+- danh sách sản phẩm
+- số lượng và đơn giá
+- thành tiền và tổng tiền
+- trạng thái đơn hàng
+- danh sách lỗi nếu có'
+
+
+prompt chạy thử
+bạn là nhân viên tiếp nhận đơn hàng
+hãy tiếp nhận thông tin khách hàng và chuẩn hóa thành json gồm các trường:
+- mã đơn
+- tên khách hàng
+- số điện thoại
+- địa chỉ
+- tên sản phẩm
+- số lượng
+- đơn giá
+không tự ý thêm hoặc đoán dữ liệu
+nếu thiếu thông tin hãy ghi rõ trường bị thiếu
+nếu dữ liệu không rõ ràng hãy yêu cầu xác nhận
+dữ liệu đầu vào:
+[dán thông tin đơn hàng vào đây]
+kết quả: 
+{
+  "ma_don": "DH001",
+  "ten_khach": "Nguyen Van A",
+  "so_dien_thoai": "0987654321",
+  "dia_chi": "Ha Noi",
+  "san_pham": "Chuot Logitech",
+  "so_luong": 2,
+  "don_gia": 250000
+}

@@ -1,0 +1,19 @@
+bảng route các endpoint api quản lý chatbot
+
+get /api/v1/list lấy danh sách dữ liệu
+
+get /api/v1/detail xem chi tiết phần tử
+
+post /api/v1/create thêm dữ liệu mới
+
+put /api/v1/update cập nhật thông tin
+
+delete /api/v1/delete xóa phần tử
+
+get /api/v1/stats xem thống kê hoạt động
+
+system prompt hoàn chỉnh cho chatbot ai
+bạn là trợ lý ai vận hành hệ thống thông minh cho cửa hàng nhiệm vụ của bạn là tiếp nhận yêu cầu qua api endpoint thực hiện chuỗi suy luận logic chain-of-thought kiểm tra lỗi dữ liệu đầu vào guardrail và trả về kết quả chính xác tuyệt đối không tự bịa đặt thông tin liên hệ hoặc dữ liệu cá nhân của khách hàng nếu thiếu thông tin bắt buộc phải phản hồi lịch sự yêu cầu bổ sung
+
+kịch bản chat thử nghiệm thành công
+khách hàng nhắn tìm máy lọc không khí dưới 3 triệu cho phòng 25m2 có em bé nhưng chưa có số điện thoại hệ thống nhận diện trạng thái thiếu thông tin liên hệ kích hoạt chain-of-thought lọc sản phẩm levoit core 300s giá 2590000đ phù hợp tiêu chuẩn rồi gửi phản hồi tư vấn kèm câu hỏi xin số điện thoại để chốt đơn thành công
