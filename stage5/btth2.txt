@@ -1,0 +1,19 @@
+prompt 1: '
+ bạn là chuyên gia mkt cực kì giỏi, bạn đang tạo một bài PR giới thiệu giải pháp AI chatbot mới cho doanh nghiệp, hiện tại bạn đang có giải pháp cho 2 yêu cầu sau
+ 1, nghiên cứu đối tượng khách hàng mục tiêu ( chủ doanh nghiệp, các bộ phận cskh,...)
+ 2, thống kê chi tiết các vấn đề " nỗi đau" ( pain points ) của doanh trong việc cskh truyền thống( quá tải thông tin, thiếu người cskh, chi phí nhân sự,... )
+ 3, trình bày dưới dạng danh sách rõ ràng chuyên nghiệp thực tế 
+
+prompt 2:
+ dựa vào kết quả trên hãy tạo một dàn í chi tiết cho bài viết PR AI chatbot mới dành cho doanh nghiệp, cần có:
+  - Mở đầu: tiêu đề hấp dẫn thu hút các doanh nghiệp
+  - Thân bài: 
+    + giới thiệu về AI chatbot
+    + các ưu điểm của AI chatbot
+    + các vấn đề về pain points của các doanh nghiệp
+    + giải pháp của các vấn đề pain points khi có AI chatbot
+    + lợi ích khi có AI chatbot
+  -Kết bài: chào mời khách hàng sử dụng AI chatbot
+
+prompt 3:
+  dựa trên câu trả lời trước hãy viết một bài PR chuyện sâu ( 1000-1500 từ) theo dàn í trên, dùng chuẩn cấu trúc SEO, sử dụng một giọng điệu duy nhất từ đầu đến cuối là chuyên nghiệp đáng tin cậy

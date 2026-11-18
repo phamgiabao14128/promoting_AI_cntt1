@@ -1,0 +1,42 @@
+PHẦN 1: MẪU PROMPT HOÀN CHỈNH (MASTER PROMPT TEMPLATE)
+Bạn có thể sao chép và sử dụng đoạn prompt dưới đây để giao nhiệm vụ cho AI:
+Bạn là một chuyên gia tài chính cá nhân thông minh. Hãy lập kế hoạch tài chính hàng tháng chi tiết dựa trên dữ liệu đầu vào sau:
+- Tổng thu nhập hàng tháng (sau thuế): [Điền số tiền]
+- Chi phí cố định bắt buộc (Nhà, điện nước, ăn uống tối thiểu): [Điền số tiền]
+- Các khoản nợ cần trả (gốc + lãi tối thiểu): [Điền số tiền]
+- Mục tiêu tiết kiệm tối thiểu: [Điền tỷ lệ % hoặc số tiền]
+PHẦN 2: VÍ DỤ MINH HỌA THỰC TẾ (CASE STUDY)
+Dữ liệu đầu vào giả lập:
+Tổng thu nhập tháng: 25.000.000 VNĐ
+Chi phí cố định bắt buộc: 8.000.000 VNĐ
+Trả nợ tối thiểu: 3.000.000 VNĐ
+Mục tiêu tiết kiệm tối thiểu: 20% tổng thu nhập (5.000.000 VNĐ)
+1. NHẬT KÝ SUY LUẬN LOGIC (REASONING STEPS)
+Bước 1: Tính toán thu nhập khả dụng sau chi phí cố định
+ - Công thức: Thu nhập khả dụng = Tổng thu nhập - Chi phí cố định
+ - Phép tính trung gian: 25.000.000 - 8.000.000 = 17.000.000 VNĐ
+ - Ý nghĩa: Số tiền còn lại sau khi đã hoàn thành các nghĩa vụ sinh hoạt thiết yếu cốt lõi.
+ Bước 2: Phân bổ khoản tiền trả nợ tối thiểu
+- Công thức: Dòng tiền sau trả nợ = Thu nhập khả dụng - Khoản nợ tối thiểu
+- Phép tính trung gian: 17.000.000 - 3.000.000 = 14.000.000 VNĐ
+- Ý nghĩa: Đảm bảo lịch sử tín dụng tốt và không bị phạt chậm trả.
+Bước 3: Trích lập quỹ tiết kiệm theo tỷ lệ cam kết
+- Công thức: Số tiền tiết kiệm = Tổng thu nhập x 20%
+- Phép tính trung gian: 25.000.000 x 0.20 = 5.000.000 VNĐ
+- Dòng tiền còn lại sau tiết kiệm: 14.000.000 - 5.000.000 = 9.000.000 VNĐ
+Bước 4: Chia phần còn lại cho chi tiêu linh hoạt (Quy tắc 50/30/20 cải tiến)
+ - Phép tính trung gian: Phần tiền còn lại là 9.000.000 VNĐ dành cho giải trí, mua sắm cá nhân, phát sinh linh hoạt trong tháng.
+ - Kiểm tra tổng tỷ lệ phần trăm phân bổ so với Tổng thu nhập (25.000.000 VNĐ):
+ + Chi phí cố định: 8.000.000 / 25.000.000 = 32%
+ + Trả nợ: 3.000.000 / 25.000.000 = 12%
++ Tiết kiệm: 5.000.000 / 25.000.000 = 20%
++ Chi tiêu linh hoạt: 9.000.000 / 25.000.000 = 36%
++ Tổng tỷ lệ: 32% + 12% + 20% + 36% = 100% (Chính xác tuyệt đối).
+2. BẢNG PHÂN BỔ NGÂN SÁCH CUỐI CÙNG ---
+ Hạng mục | Số tiền (VNĐ) | Tỷ lệ % | Ghi chú |
+| :--- | :--- | :--- | :--- |
+| Chi phí cố định | 8.000.000 | 32% | Nhà cửa, điện nước, ăn uống cơ bản |
+| Trả nợ tối thiểu | 3.000.000 | 12% | Thanh toán gốc và lãi đúng hạn |
+| Tiết kiệm & Đầu tư | 5.000.000 | 20% | Đạt mục tiêu tối thiểu cam kết |
+| Chi tiêu linh hoạt | 9.000.000 | 36% | Giải trí, giao lưu, mua sắm cá nhân |
+| Tổng cộng | 25.000.000 | 100% | Cân đối hoàn hảo dòng tiền |
