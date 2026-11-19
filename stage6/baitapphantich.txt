@@ -1,0 +1,20 @@
+1 đề xuất 2 prompt mẫu
+ở đây mình chọn ứng dụng kỹ thuật feynman prompt làm gia sư để học khái niệm về thuật toán tìm kiếm nhị phân
+giải pháp 1 (prompt đơn giản, ngắn gọn)
+giải thích cho mình thuật toán tìm kiếm nhị phân theo cách dễ hiểu nhất như đang giảng cho người mới bắt đầu nhé
+giải pháp 2 (prompt chi tiết, nhiều ràng buộc)
+đóng vai là một giảng viên đại học ngành công nghệ thông tin có kinh nghiệm giảng dạy cho tân sinh viên hãy giải thích khái niệm thuật toán tìm kiếm nhị phân áp dụng kỹ thuật feynman theo cấu trúc 3 phần gồm giải thích bằng ngôn ngữ đời thường không dùng từ ngữ chuyên ngành phức tạp đưa ra một ví dụ thực tế dễ hình dung và đặt 2 câu hỏi ngắn để kiểm tra xem mình đã hiểu bài chưa giới hạn độ dài dưới 250 từ và không viết code
+2 so sánh trade-off giữa 2 giải pháp
+về độ dễ hiểu và dễ viết thì giải pháp 1 cao hơn hẳn vì câu lệnh ngắn gọn tự nhiên ai cũng viết được ngay trong vài giây còn giải pháp 2 ở mức trung bình vì người dùng phải suy nghĩ kỹ để thiết lập bối cảnh và các ràng buộc nên mất thời gian soạn thảo hơn
+về lượng token tiêu tốn thì giải pháp 1 tốn rất ít token do câu lệnh ngắn và ai tự do trả lời còn giải pháp 2 tốn nhiều token hơn hẳn vì phần đề bài dài và ai phải tuân thủ đủ các bước được yêu cầu
+về khả năng chặn lỗi biên và kiểm soát đầu ra thì giải pháp 1 chỉ ở mức trung bình vì ai dễ giải thích lan man hoặc chèn thêm nhiều code khiến sinh viên mới học bị rối còn giải pháp 2 làm cực tốt việc này nhờ các ràng buộc rõ ràng giúp kết quả đi đúng trọng tâm không bị lệch hướng
+3 lựa chọn phương án tối ưu và chạy thử
+mình chọn giải pháp 2 vì mục tiêu của việc học là phải hiểu sâu và đúng bản chất kiến thức ngay từ đầu tuy giải pháp 2 tốn công viết prompt và tốn nhiều token hơn một chút nhưng đổi lại nó kiểm soát được độ dài tránh lan man và có phần đặt câu hỏi ngược lại giúp mình tự kiểm tra kiến thức theo đúng tinh thần của phương pháp feynman
+kết quả chạy thử giải pháp 2 với ai
+1 giải thích đơn giản
+tìm kiếm nhị phân giống như cách bạn tìm một từ trong cuốn từ điển giấy dày cộp thay vì lật từng trang một từ đầu đến cuối bạn mở ngay chính giữa cuốn sách nếu từ cần tìm nằm ở nửa sau bạn vứt bỏ hoàn toàn nửa đầu rồi lại tiếp tục chia đôi nửa sau ra để tìm cứ lặp lại việc chia đôi như vậy cho đến khi thấy từ đó điều kiện bắt buộc là dữ liệu phải được sắp xếp theo thứ tự từ trước
+2 ví dụ thực tế
+mình nghĩ ra một số bí mật từ 1 đến 100 và đố bạn đoán trúng trong ít lượt nhất thay vì đoán lần lượt 1 2 3 bạn sẽ đoán ngay số ở giữa là 50 nếu mình bảo số bí mật lớn hơn 50 bạn lập tức loại bỏ các số từ 1 đến 50 và đoán tiếp số ở giữa khoảng còn lại là 75 chỉ mất tối đa 7 lần đoán là bạn chắc chắn tìm ra đáp án
+3 câu hỏi kiểm tra
+câu 1 nếu danh sách tên sinh viên chưa được sắp xếp theo bảng chữ cái thì có dùng cách tìm kiếm chia đôi này được không tại sao
+câu 2 với 1000 trang sách được đánh số thứ tự thì ở lần lật đầu tiên bạn nên mở trang số bao nhiêu để tối ưu nhất
