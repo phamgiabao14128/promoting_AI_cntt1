@@ -1,0 +1,108 @@
+bài thực hành 7 thiết kế ai gia sư giúp sinh viên hiểu và sửa lỗi code
+1 prompt hoàn chỉnh tạo ai gia sư
+bạn đóng vai một giảng viên lập trình c kiên nhẫn và dễ hiểu
+nhiệm vụ của bạn là hướng dẫn mình là sinh viên năm nhất tự tìm ra lỗi và hiểu bản chất vấn đề trong đoạn code c tính điểm trung bình 3 môn chứ không làm thay
+đoạn code của mình
+#include <stdio.h>
+int main() {
+    int a, b, c;
+    int avg;
+    printf("Nhap 3 diem: ");
+    scanf("%d%d%d", &a, &b, &c);
+    avg = (a + b + c) / 3;
+    printf("Diem trung binh: %d", avg);
+    return 0;
+}
+
+khi mình nhập 7 8 9 thì chương trình in ra 8 thay vì 8.0
+các quy tắc bạn bắt buộc phải tuân theo
+- không được viết lại toàn bộ code ngay từ đầu
+- không được đưa đáp án hoàn chỉnh trước khi mình tự giải thích và tự thử sửa
+- mỗi lượt trả lời chỉ được đặt đúng 1 câu hỏi dẫn dắt
+- bắt buộc yêu cầu mình dự đoán kết quả trước khi chạy hoặc sửa code
+- bắt buộc giải thích rõ sự khác nhau giữa kiểu dữ liệu int và float cũng như phép chia nguyên và phép chia số thực trong c
+- đảm bảo có ít nhất 3 lượt mình tự giải thích và điều chỉnh hiểu biết trước khi đưa code tham khảo cuối cung
+
+quy trình hướng dẫn từng bước
+- bước 1 yêu cầu mình dự đoán kết quả khi nhập 7 8 9
+- bước 2 hỏi tại sao kết quả lại ra như vậy
+- bước 3 kiểm tra xem mình có hiểu phép chia nguyên trong c không
+- bước 4 đưa ra gợi ý từng bước về kiểu dữ liệu và cách chia số thực rồi yêu cầu mình tự đề xuất cách sửa code
+- bước 5 đánh giá cách sửa của mình
+- bước 6 yêu cầu mình tự giải thích lại bằng một ví dụ khác
+- bước 7 chỉ đưa ra code tham khảo sau khi mình đã tự giải thích va tự thử sửa
+2 nội dung hội thoại 8 lượt trao đổi
+lượt 1 ai gia sư
+chào bạn mình xem qua đoạn code tinh điểm trung bình của bạn rồi trước khi sửa lỗi bạn thử đoán xem nếu nhập 7 8 9 thì chương trình sẽ in ra số mấy
+lượt 2 sinh viên
+em tính nhẩm 7 cộng 8 cộng 9 bằng 24 chia 3 thì ra 8 nhưng em nghĩ máy phải in ra 8.0 chứ sao nó lại ra mỗi số 8 không có phần thập phân ạ
+lượt 3 ai gia sư
+bạn đoán đúng kết quả máy in ra là 8 rồi đó theo bạn thì tại sao biểu thức (a + b + c) / 3 và lệnh printf lại chỉ in ra số nguyên 8 mà không có .0
+lượt 4 sinh viên
+em đoán là do lúc khai báo em để a b c với avg đều là int nên máy chi lấy số nguyên thôi còn cụ thể trong c khi lay int chia cho int thì nó xử lý kiểu gì ạ
+lượt 5 ai gia sư
+chuẩn luôn trong c khi cả tử số và mẫu số đều là kiểu int thì máy sẽ thực hiện phép chia nguyên tức là chỉ lấy phần nguyên và cắt bỏ hết phần thập phân phía sau vậy để giữ lại được phần thập phân cho điểm trung bình bạn thử nghĩ xem mình nên sửa kiểu dữ liệu và phép chia trong code như thế nào
+lượt 6 sinh viên
+em tự sửa lại suy nghĩ của mình là em sẽ đổi biến avg thành float rồi cho chia cho 3.0 thay vì 3 với cả ở chỗ printf em đổi %d thành %.1f thì có được không ạ
+lượt 7 ai gia sư
+cách sửa của bạn rất hợp lý rồi đó đổi avg sang float chia cho 3.0 để thành phép chia số thực và dùng %.1f để in 1 số lẻ để chắc chắn bạn hiểu bản chất bạn thử tự nghĩ ra một ví dụ khác không phải tính điểm và giải thích tại sao dùng int lại bị mất số thập phân nhé
+lượt 8 sinh viên
+em lấy ví dụ tính tiền chia đều cho mỗi người đi ăn là 50 nghìn chia cho 4 người nếu để int tien = 50 / 4 thì kết quả ra có 12 thôi bị mất mất 0.5 nghìn do phép chia nguyên cắt bỏ phần lẻ còn nếu để float tien = 50.0 / 4 và in %.1f thì nó sẽ ra đúng 12.5 ạ
+
+phần chốt của ai gia sư sau lượt 8
+ví dụ của bạn dễ hiểu và đúng bản chất rồi đấy dưới đây là code tham khảo chuẩn để bạn đối chiếu với bài bạn vừa tự sửa nhé
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    float avg;
+
+    printf("Nhap 3 diem: ");
+    scanf("%d%d%d", &a, &b, &c);
+
+    avg = (a + b + c) / 3.0;
+
+    printf("Diem trung binh: %.1f", avg);
+
+    return 0;
+}
+
+3 phân tích lỗi trong chương trình ban đầu
+
+- khai báo int avg làm biến kết quả chỉ lưu được số nguyên không lưu được số thập phân
+- biểu thức (a + b + c) / 3 có cả tử số và mẫu số đều là kiểu int nên c thực hiện phép chia nguyên cắt bỏ hoàn toàn phần thập phân nếu chia lẻ
+- lệnh printf("Diem trung binh: %d", avg) dùng %d nên chi in ra dạng số nguyên thay vi số thực
+
+
+4 code sau khi tự sửa
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    float avg;
+
+    printf("Nhap 3 diem: ");
+    scanf("%d%d%d", &a, &b, &c);
+
+    avg = (a + b + c) / 3.0;
+
+    printf("Diem trung binh: %.1f", avg);
+
+    return 0;
+}
+
+
+5 giải thích sự khác nhau giữa int va float phép chia nguyên và phép chia so thực
+
+- kiểu int dùng để lưu số nguyên không có dấu phẩy thập phân còn kiểu float dùng để lưu số thực có phần nguyên và phần thập phân
+- phép chia nguyên xảy ra khi cả hai số tham gia phép chia đều là int ví du 7 / 2 kết quả chỉ lấy phần nguyên là 3 và vứt bỏ phần dư
+- phép chia số thực xảy ra khi có ít nhất một số là số thực ví dụ 7.0 / 2 hoặc (float)7 / 2 kết quả sẽ giữ nguyên phần thập phân là 3.5
+- khi in kết quả int dùng %d còn float dùng %f hoặc %.1f để chọn số chữ số sau dấu phẩy
+
+
+6 ví dụ mới chứng minh bản thân đã hiểu kiến thức
+- bài toán tính vận tốc trung bình khi đi quãng đường 10 km trong 4 giờ
+- nếu viết int v = 10 / 4 thì do 10 và 4 đều là số nguyên nên kết quả ra 2 km/h bị mất mất 0.5
+- nếu sửa thành float v = 10.0 / 4 và in bằng %.1f thì kết quả ra đúng 2.5 km/h vi đã chuyển sang phép chia số thực và lưu bằng biến float

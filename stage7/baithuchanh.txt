@@ -1,0 +1,40 @@
+bài thực hành 8 xây dựng rubric đánh giá và review sản phẩm lập trình
+1 rubric 100 điểm
+đúng chức năng nghiệp vụ 30đ đủ 5 chức năng thêm hiển thị tìm theo mã xóa tính điểm trung bình
+cấu trúc class và object 20đ tách class dữ liệu và quản lý đóng gói thuộc tính
+xử lý dữ liệu và ngoại lệ 15đ kiểm tra điểm 0 đến 10 trùng mã rỗng và bắt ngoại lệ nhập liệu
+tổ chức code dễ đọc 15đ đặt tên rõ ràng chia hàm hợp lý
+kiểm thử tình huống biên 20đ xử lý danh sách rỗng không tìm thấy mã xóa đầu cuối điểm 0 và 10
+
+2 prompt ai code reviewer
+bạn là giảng viên chấm oop khó tính khách quan hãy review code quản lý sinh viên theo rubric 100 điểm giữ nguyên thang điểm trích dẫn dòng code minh chứng ghi rõ chưa đủ cơ sở đánh giá nếu thiếu bằng chứng không khẳng định chạy đúng khi chưa chạy thực tế và phân biệt lỗi cú pháp lỗi logic lỗi thiết kế theo 8 bước đọc code xác định class object kiểm tra 5 chức năng review cấu trúc đối chiếu rubric chấm điểm phân loại lỗi và đề xuất thứ tự ưu tiên sửa
+
+3 chương trình mẫu của sinh viên
+bài nộp java có class sinh viên và class quản lý sinh viên thực hiện 5 chức năng cơ bản nhưng thiếu đóng gói thiếu menu thiếu kiểm tra đầu vào và sai logic xóa tìm kiếm
+
+4 bảng chấm điểm chi tiết
+đúng chức năng nghiệp vụ 18/30 đủ 5 hàm nhưng sai logic tìm kiếm và xóa trong lúc duyệt danh sách
+cấu trúc class và object 12/20 có tách class nhưng thuộc tính để công khai và lạm dụng phương thức tĩnh
+xử lý dữ liệu và ngoại lệ 3/15 thiếu kiểm tra điểm hợp lệ trùng mã và thiếu bắt ngoại lệ nhập sai kiểu
+tổ chức code dễ đọc 11/15 đặt tên rõ nghĩa nhưng thiếu menu và chưa tách tầng nhập xuất
+kiểm thử tình huống biên 4/20 chia trung bình lúc danh sách rỗng gây lỗi và chưa có bằng chứng chạy thử
+tổng 48/100 điểm
+
+5 lỗi phát hiện theo phân loại và mức độ
+lỗi logic và runtime mức cao xóa phần tử trong vòng lặp duyệt gây dừng chương trình
+lỗi logic mức cao so sánh địa chỉ chuỗi thay vì nội dung chuỗi khi tìm theo mã
+lỗi logic tình huống biên mức cao tính trung bình lúc danh sách rỗng gây chia cho không
+lỗi logic nhập liệu mức trung bình đọc số xong không xóa bộ đệm làm trôi lệnh nhập chuỗi
+lỗi thiết kế mức trung bình để thuộc tính công khai vi phạm đóng gói và lạm dụng từ khóa tĩnh
+lỗi thiếu kiểm tra đầu vào mức thấp chưa ràng buộc điểm 0 đến 10 và chưa kiểm tra trùng mã
+
+6 đề xuất sửa lỗi theo thứ tự ưu tiên
+ưu tiên 1 sửa hàm xóa bằng bộ lặp an toàn và sửa hàm tìm bằng hàm so sánh nội dung chuỗi
+ưu tiên 2 kiểm tra danh sách rỗng trước khi chia và xử lý xóa bộ đệm khi nhập số
+ưu tiên 3 chuyển thuộc tính sang riêng tư tạo hàm lấy gán dữ liệu và kiểm tra điểm cùng trùng mã
+
+7 so sánh trước và sau khi cải thiện
+điểm rubric tăng từ 48/100 lên 92/100 điểm
+tìm kiếm chính xác và xóa sinh viên an toàn không sập chương trình
+tính đóng gói dữ liệu được đảm bảo qua phạm vi riêng tư
+xử lý an toàn tình huống danh sách rỗng và nhập sai định dạng số
